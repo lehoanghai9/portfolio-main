@@ -22,7 +22,7 @@ export default function HomePage() {
         <h1
           className={cn(
             "mb-4 text-4xl sm:text-5xl md:text-7xl font-medium tracking-[-0.06em] text-balance leading-tight",
-            firaCode.className
+            instrument.className
           )}
         >
           Thoughts and explorations from a curious developer.

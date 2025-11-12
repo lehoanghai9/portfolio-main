@@ -1,4 +1,3 @@
-"use client";
 import { Inter, Instrument_Serif } from "next/font/google";
 import localFont from "next/font/local";
 
