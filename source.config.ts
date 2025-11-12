@@ -8,16 +8,12 @@ import { z } from "zod";
 
 // You can customise Zod schemas for frontmatter and `meta.json` here
 // see https://fumadocs.vercel.app/docs/mdx/collections#define-docs
-export const docs = defineDocs({
-  dir: "content/blog",
+export const blogDocs = defineDocs({
+  dir: "content/posts",
   docs: {
     schema: frontmatterSchema.extend({
-      links: z
-        .object({
-          docs: z.string().optional(),
-          api: z.string().optional(),
-        })
-        .optional(),
+        date: z.string(),
+        updated: z.string().optional(),
     }),
   },
   meta: {
@@ -29,6 +25,6 @@ export default defineConfig({
   mdxOptions: {
     // MDX options
     
-    baseUrl: "/blog",
+    baseUrl: "/posts",
   },
 });

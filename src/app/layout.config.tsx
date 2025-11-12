@@ -17,6 +17,7 @@ export const baseOptions: BaseLayoutProps = {
         <Logo className="text-foreground/70 fill-foreground/10" />
       </div>
     ),
+    enabled: false,
   },
   githubUrl: config.githubUrl,
   // see https://fumadocs.dev/docs/ui/navigation/links
@@ -35,7 +36,10 @@ function Logo({ className }: { className: string }) {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className={cn("lucide lucide-flower-lotus-icon lucide-flower-lotus", className)}
+      className={cn(
+        "lucide lucide-flower-lotus-icon lucide-flower-lotus",
+        className
+      )}
     >
       <path d="M12 20c0-5.5-4.5-10-10-10 0 5.5 4.5 10 10 10" />
       <path d="M9.7 8.3c-1.8-2-3.8-3.1-3.8-3.1s-.8 2.5-.5 5.4" />

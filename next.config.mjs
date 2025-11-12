@@ -8,8 +8,8 @@ const config = {
   rewrites() {
     return [
       {
-        source: "/blog/:path*.md",
-        destination: "/api/blog/:path*",
+        source: "/posts/:path*.md",
+        destination: "/api/posts/:path*",
       },
       {
         source: "/llms.txt",

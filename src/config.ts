@@ -3,13 +3,13 @@ export const config = {
     process.env.NODE_ENV === "production"
       ? `https://${process.env.NEXT_PUBLIC_VERCEL_PROJECT_PRODUCTION_URL}`
       : `http://localhost:3000`,
-  githubUrl: "",
+  githubUrl: "https://github.com/lehoanghai9/portfolio-main",
 };
 
 export const siteConfig = {
-  name: "portfolio-hai",
-  title: "Le Hoang Hai Portfolio",
+  name: "blog-hai",
+  title: "Le Hoang Hai Blog",
   description:
-    "Le Hoang Hai Portfolio",
+    "Le Hoang Hai Blog",
   url: config.appUrl,
 };

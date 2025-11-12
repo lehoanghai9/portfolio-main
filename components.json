@@ -19,6 +19,7 @@
   },
   "iconLibrary": "lucide",
   "registries": {
-    "@basecn": "https://basecn.dev/r/{name}.json"
+    "@basecn": "https://basecn.dev/r/{name}.json",
+    "@shadcn-io": "https://www.shadcn.io/registry/{name}.json"
   }
 }

@@ -1,6 +1,7 @@
 import { DocsFooter } from "@/components/docs-footer";
 import { source } from "@/lib/source";
 import { getMDXComponents } from "@/mdx-components";
+import { format } from "date-fns";
 import { createRelativeLink } from "fumadocs-ui/mdx";
 import {
   DocsBody,
@@ -23,7 +24,7 @@ export default async function BlogPage(props: {
   const MDXContent = page.data.body;
 
   return (
-    <div className="max-w-full lg:max-w-[820px] mx-auto">
+    <div className="max-w-full lg:max-w-[820px] pt-[250px] mx-auto">
       <DocsPage
         /* toc={page.data.toc} */
         full={page.data.full}
@@ -34,15 +35,20 @@ export default async function BlogPage(props: {
       >
         <div className="flex flex-col">
           <div className="flex items-center justify-between gap-4">
-            <DocsTitle className="text-4xl">{page.data.title}</DocsTitle>
+            <DocsTitle className="text-5xl font-serif font-normal">
+              {page.data.title}
+            </DocsTitle>
+
             {/* <MarkdownActions
               content={page.data.content}
               className="hidden lg:flex"
             /> */}
           </div>
-          <DocsDescription className="mt-3 mb-5">
-            {page.data.description}
-          </DocsDescription>
+          <span
+            className="text-sm text-muted-foreground mt-4"
+          >
+            {format(new Date(page.data.date), "MMM d, yyyy")}
+          </span>
           {/* <MarkdownActions content={page.data.content} className="lg:hidden" /> */}
           {/* <div className="mb-8 flex items-center gap-2">
             {page.data.links?.docs && (

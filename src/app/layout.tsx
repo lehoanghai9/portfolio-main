@@ -7,6 +7,7 @@ import { Inter } from "next/font/google";
 import type { ReactNode } from "react";
 import { Databuddy } from "@databuddy/sdk";
 import { Toaster } from "@/components/ui/sonner";
+import { NavigationBar } from "@/components/navigation-bar";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -67,6 +68,7 @@ export default function Layout({ children }: { children: ReactNode }) {
     >
       <body className="flex flex-col min-h-screen">
         <RootProvider>
+          <NavigationBar />
           {children}
 
           <Databuddy
