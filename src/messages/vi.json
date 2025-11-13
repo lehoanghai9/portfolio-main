@@ -1,0 +1,19 @@
+{
+  "Hero": {
+    "title": "Những suy nghĩ và khám phá từ một lập trình viên tò mò.",
+    "description-1": "Chào bạn, mình là Hai. Đây là blog của mình. Ở đây, mình viết về những điều mà mình đam mê.",
+    "description-2": "Mỗi bài viết của mình đều nhằm đi sâu vào những chủ đề mà mình quan tâm, đồng thời giúp những khái niệm phức tạp trở nên dễ hiểu hơn thông qua các ví dụ tương tác, trực quan hóa và hướng dẫn chi tiết.",
+    "description-3": "Mục tiêu của mình là mang đến cho bạn những công cụ và trực giác để tự mình khám phá thêm."
+  },
+  "Navigation": {
+    "index": "Trang chủ",
+    "articles": "Bài viết"
+  },
+  "Settings": {
+    "language": "Ngôn ngữ",
+    "theme": "Chủ đề",
+    "dark": "Tối",
+    "light": "Sáng",
+    "system": "Hệ thống"
+  }
+}

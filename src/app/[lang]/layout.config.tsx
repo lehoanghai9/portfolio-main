@@ -1,8 +1,7 @@
 import { config } from "@/config";
+import { i18n } from "@/lib/i18n/utils";
 import { cn } from "@/lib/utils";
 import type { BaseLayoutProps } from "fumadocs-ui/layouts/shared";
-import { Bolt, Boxes, Sigma, SquareCode } from "lucide-react";
-
 /**
  * Shared layout configurations
  *
@@ -10,19 +9,22 @@ import { Bolt, Boxes, Sigma, SquareCode } from "lucide-react";
  * Home Layout: app/(home)/layout.tsx
  * Docs Layout: app/docs/layout.tsx
  */
-export const baseOptions: BaseLayoutProps = {
-  nav: {
-    title: (
-      <div className="flex items-center gap-2">
-        <Logo className="text-foreground/70 fill-foreground/10" />
-      </div>
-    ),
-    enabled: false,
-  },
-  githubUrl: config.githubUrl,
-  // see https://fumadocs.dev/docs/ui/navigation/links
-  links: [],
-};
+export function baseOptions(locale: string): BaseLayoutProps {
+  return {
+    i18n: i18n,
+    nav: {
+      title: (
+        <div className="flex items-center gap-2">
+          <Logo className="text-foreground/70 fill-foreground/10" />
+        </div>
+      ),
+      enabled: false,
+    },
+    githubUrl: config.githubUrl,
+    // see https://fumadocs.dev/docs/ui/navigation/links
+    links: [],
+  };
+}
 
 function Logo({ className }: { className: string }) {
   return (

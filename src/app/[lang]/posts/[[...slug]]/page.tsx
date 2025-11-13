@@ -9,10 +9,11 @@ import { DocsBody, DocsPage, DocsTitle } from "fumadocs-ui/page";
 import { notFound } from "next/navigation";
 
 export default async function BlogPage(props: {
-  params: Promise<{ slug: string[] }>;
+  params: Promise<{ slug: string[]; lang: string }>;
 }) {
   const params = await props.params;
-  const page = source.getPage(params.slug);
+  console.log(params.lang);
+  const page = source.getPage(params.slug, params.lang);
   if (!page) notFound();
 
   const MDXContent = page.data.body;

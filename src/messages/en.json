@@ -1,0 +1,19 @@
+{
+  "Hero": {
+    "title": "Thoughts and explorations from a curious developer.",
+    "description-1": "Hi I'm Hai. This is my blog. Here, I write about the things I'm passionate about.",
+    "description-2": "Each piece I write aims to dive deep into the topics I'm passionate about, while also making complex topics more accessible through interactive playgrounds, visualization, and well detailed walkthroughs.",
+    "description-3": "My goal is to give you the tools and intuition to explore further on your own."
+  },
+  "Navigation": {
+    "index": "Index",
+    "articles": "Articles"
+  },
+  "Settings": {
+    "language": "Language",
+    "theme": "Theme",
+    "dark": "Dark",
+    "light": "Light",
+    "system": "System"
+  }
+}

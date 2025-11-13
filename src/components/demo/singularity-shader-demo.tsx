@@ -7,7 +7,7 @@ export default function SingularityShaderDemo({
 }: {
   className?: string;
 }) {
-  const { theme } = useTheme();
+  const { resolvedTheme: theme } = useTheme();
   return (
     <SingularityShaders
       speed={1}

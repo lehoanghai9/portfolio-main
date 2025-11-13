@@ -1,0 +1,19 @@
+{
+  "Hero": {
+    "title": "Gondolatok és felfedezések egy kíváncsi fejlesztőtől.",
+    "description-1": "Szia, Hai vagyok. Ez a blogom. Itt azokról a dolgokról írok, amikért igazán lelkesedem.",
+    "description-2": "Minden írásom célja, hogy mélyebben belemerüljek az engem érdeklő témákba, miközben az összetett fogalmakat interaktív példákon, vizualizáción és részletes magyarázatokon keresztül teszem könnyebben érthetővé.",
+    "description-3": "Célom, hogy olyan eszközöket és intuíciót adjak neked, amelyekkel önállóan is tovább tudsz majd kutatni és felfedezni."
+  },
+  "Navigation": {
+    "index": "Kezdőlap",
+    "articles": "Cikkek"
+  },
+  "Settings": {
+    "language": "Nyelv",
+    "theme": "Téma",
+    "dark": "Sötét",
+    "light": "Világos",
+    "system": "Alapértelmezett"
+  }
+}
