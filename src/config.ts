@@ -3,7 +3,7 @@ export const config = {
     process.env.NODE_ENV === "production"
       ? `https://${process.env.NEXT_PUBLIC_VERCEL_PROJECT_PRODUCTION_URL}`
       : `http://localhost:3000`,
-  githubUrl: "https://github.com/lehoanghai9/portfolio-main",
+  githubUrl: "https://github.com/lehoanghai9/blog",
 };
 
 export const siteConfig = {
